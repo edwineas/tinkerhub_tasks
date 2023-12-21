@@ -1,65 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Typescript Shortlisting Task</title>
-        <style>
-            body {
-                background-color: #282727;
-                font-family: Arial, Helvetica, sans-serif;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-            #container {
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 5px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            #btn {
-                padding: 10px 20px;
-                border-radius: 5px;
-                background-color: #282727;
-                color: #fff;
-                font-size: 20px;
-                width: 145px;
-            }
-            #count {
-                margin: 0 0;
-            }
-
-        </style>
+        <title>TinkerHub_Tasks</title>
     </head>
-    <body>
-        <div id="container">
-            <button id="btn">Click Me</button>
-            <h2>Click Count</h2>
-            <h1 id="count">0</h1>
-        </div>
-        <script>
-            const btn = document.getElementById('btn');
-            const count = document.getElementById('count');
-            let counter = 0;
-            let i = -1;
-            const clrs = ['Gray', 'darkgray', 'Black']
-            function increment() {
-                counter++;
-                count.innerHTML = counter;
-            }
-            function clrchange() {
-                i++;
-                if (i > 2) {
-                    i = 0;
-                }
-                btn.style.backgroundColor = clrs[i];
-            }
-            btn.addEventListener('click', () => {
-                increment();
-                clrchange();
-            });
-        </script>
+    <body style="text-align: center;">
+        <h1>TinkerHub Tasks</h1>
+        <a target="_blank" href="/Typescript_Shortlisting_Task/index.html">Typescript Shortlisting Task</a><br>
     </body>
 </html>
